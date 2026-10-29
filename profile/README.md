@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/kora-oss/.github/main/profile/kora-oss-cover.svg" alt="Kora OSS Banner" width="100%">
+  <img src="https://raw.githubusercontent.com/kora-oss/.github/main/profile/kora-oss-banner.jpg" alt="Kora OSS Banner" width="100%">
 </p>
 
 <p align="center">
