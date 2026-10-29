@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+
+    <!-- Brand Cyan-Violet Gradient -->
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+
+    <linearGradient id="neonCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="avatarGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="12" result="blur1"/>
+      <feGaussianBlur stdDeviation="24" result="blur2"/>
+      <feMerge>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="512" height="512" fill="url(#bgGrad)"/>
+
+  <!-- Ambient Glow Behind Icon -->
+  <circle cx="256" cy="256" r="160" fill="#38bdf8" opacity="0.12" filter="url(#avatarGlow)"/>
+  <circle cx="256" cy="256" r="120" fill="#818cf8" opacity="0.15" filter="url(#avatarGlow)"/>
+
+  <!-- Subtle Outer Hex Shield Outline -->
+  <path d="M 256 70 L 415 162 L 415 350 L 256 442 L 97 350 L 97 162 Z" 
+        fill="#0f172a" 
+        fill-opacity="0.85"
+        stroke="url(#primaryGrad)" 
+        stroke-width="5" 
+        stroke-linejoin="round"
+        filter="url(#softGlow)"/>
+
+  <!-- Inner Concentric Node Grid Details -->
+  <circle cx="256" cy="70" r="6" fill="#38bdf8"/>
+  <circle cx="415" cy="162" r="6" fill="#818cf8"/>
+  <circle cx="415" cy="350" r="6" fill="#c084fc"/>
+  <circle cx="256" cy="442" r="6" fill="#38bdf8"/>
+  <circle cx="97" cy="350" r="6" fill="#818cf8"/>
+  <circle cx="97" cy="162" r="6" fill="#38bdf8"/>
+
+  <!-- Core 'K' Logo Mark -->
+  <g transform="translate(256, 256)" filter="url(#softGlow)">
+    <!-- Vertical Spine -->
+    <path d="M -48 -105 L -48 105" 
+          stroke="url(#neonCyan)" 
+          stroke-width="26" 
+          stroke-linecap="round"/>
+
+    <!-- Upper Branch -->
+    <path d="M -48 0 L 52 -100" 
+          stroke="url(#primaryGrad)" 
+          stroke-width="26" 
+          stroke-linecap="round"/>
+
+    <!-- Lower Branch -->
+    <path d="M -8 10 L 56 105" 
+          stroke="url(#primaryGrad)" 
+          stroke-width="26" 
+          stroke-linecap="round"/>
+
+    <!-- Center Convergence Accent -->
+    <circle cx="-48" cy="0" r="14" fill="#00f2fe" filter="url(#avatarGlow)"/>
+    <circle cx="52" cy="-100" r="8" fill="#38bdf8"/>
+    <circle cx="56" cy="105" r="8" fill="#c084fc"/>
+  </g>
+</svg>
