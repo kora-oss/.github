@@ -12,12 +12,12 @@
 
 ### 🚀 Welcome to Kora OSS
 
-Kora OSS is an open-source initiative dedicated to building modern developer tooling, Node.js infrastructure, and billing/pricing primitives.
+Kora OSS is an open-source initiative dedicated to building resilient developer tooling, Node.js infrastructure, and modern fintech/billing primitives.
 
 #### 📦 Active Projects
-* **[kora-pay](https://github.com/kora-oss/kora-pay)** — Pricing and billing helpers for Node.js, complete with event-loop drills and real-world contributor exercises.
+* **[kora-pay](https://github.com/kora-oss/kora-pay)** — Universal Cross-Border Billing & Multi-Rail Payment Orchestrator for Node.js. Unifies global rails (Stripe) and emerging market payment methods (Paystack) with automated currency routing, cryptographic webhook normalization, and event-loop concurrency drills.
 
 #### 🤝 Contributor-First Community
-Built in partnership with the **[SKILL.SCH Open Source Contributor & Maintainer course](https://skill.sch/open-source)** to provide real-world open-source learning, bug triage, and maintainer drills.
+Built in partnership with the **[SKILL.SCH Open Source Contributor & Maintainer course](https://skill.sch/open-source)** to provide real-world open-source engineering experience, bug triage, and maintainer drills.
 
-* Fork any repo, look through [good first issues](https://github.com/kora-oss/kora-pay/issues), and submit a pull request!
+* Fork any repo, look through our **[good first issues](https://github.com/kora-oss/kora-pay/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)**, and submit a pull request!
